@@ -1,0 +1,41 @@
+.active {
+  border-radius: 10px;
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.completed {
+  border-radius: 10px;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.cancelled {
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.noActive {
+  border-radius: 10px;
+  background: #b9b9b9;
+  color: #353535;
+}
+
+.high {
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.medium {
+  border-radius: 10px;
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.low {
+  border-radius: 10px;
+  background: #dcfce7;
+  color: #166534;
+}

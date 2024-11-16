@@ -1,0 +1,97 @@
+.sidebar {
+  background: #fff;
+  max-width: 246px;
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 0 20px 20px 0px;
+  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  &__inner {
+    max-width: 246px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 40px 26px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 33px;
+  }
+
+  .section {
+    &__title {
+      margin: 30px 0 15px 0;
+      font-size: 16px;
+      color: $settings-title;
+      font-weight: 600;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &--item {
+        display: flex;
+        padding: 14px 20px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $main-text;
+        border-radius: 10px;
+
+        a {
+          color: $main-text;
+        }
+
+        &--active {
+          color: $active-section-text;
+          background: $active-section-bg;
+
+          a {
+            color: $active-section-text;
+          }
+        }
+      }
+    }
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding-top: 30px;
+    border-top: 1px solid #e5e5e5;
+
+    img {
+      display: block;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 10px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &__name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &__email {
+      font-size: 12px;
+      font-weight: 400;
+      color: $placeholder;
+    }
+  }
+}
